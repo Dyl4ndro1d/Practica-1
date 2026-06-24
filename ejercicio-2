@@ -1,0 +1,20 @@
+clave_correcto = 9876
+intentos_realizados = 0
+intentos_maximos = 3
+
+
+while intentos_realizados < intentos_maximos:
+    pin_ingresado = int(input("Ingrese su clave: "))
+    
+    if pin_ingresado == clave_correcto:
+        print("Acceso concedido.")
+        break
+    else:
+        print("Clave incorrecta.")
+        intentos_realizados += 1        
+if intentos_realizados == intentos_maximos:
+    print("Caja Fuerte bloqueada.")
+
+
+
+
