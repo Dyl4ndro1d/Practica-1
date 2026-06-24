@@ -1,0 +1,16 @@
+pin_correcto = 4321
+intentos_realizados = 0
+intentos_maximos = 3
+
+
+while intentos_realizados < intentos_maximos:
+    pin_ingresado = int(input("Ingrese su PIN: "))
+    
+    if pin_ingresado == pin_correcto:
+        print("Acceso concedido.")
+        break
+    else:
+        print("PIN incorrecto.")
+        intentos_realizados += 1        
+if intentos_realizados == intentos_maximos:
+    print("Tarjeta bloqueada.")
